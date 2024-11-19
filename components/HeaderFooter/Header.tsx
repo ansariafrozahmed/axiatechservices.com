@@ -10,7 +10,10 @@ const Header = () => {
     <header className="bg-white ">
       <nav className="container mx-auto flex items-center justify-between py-4 px-5 md:px-10">
         {/* Logo Section */}
-        <div className="w-32 lg:w-36">
+        <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
+          AXIA
+        </h2>
+        {/* <div className="w-32 lg:w-36">
           <Image
             src="https://sagarhr.com/wp-content/uploads/2024/01/HR-Logos8-1536x375.png"
             alt="Sagar HR Logo"
@@ -19,7 +22,7 @@ const Header = () => {
             width={192}
             priority
           />
-        </div>
+        </div> */}
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center gap-8 text-xs tracking-widest font-medium uppercase">
@@ -71,7 +74,7 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center justify-between p-5">
-          <div className="w-32">
+          {/* <div className="w-32">
             <Image
               src="https://sagarhr.com/wp-content/uploads/2024/01/HR-Logos8-1536x375.png"
               alt="Sagar HR Logo"
@@ -80,7 +83,10 @@ const Header = () => {
               width={192}
               priority
             />
-          </div>
+          </div> */}
+          <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
+            AXIA
+          </h2>
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-800 focus:outline-none"

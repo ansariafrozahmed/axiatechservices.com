@@ -5,7 +5,10 @@ const Footer = () => {
   return (
     <div className="bg-gray-100">
       <div className="templateContainer py-4 md:py-6 lg:py-10 space-y-5">
-        <div className="w-full flex items-center justify-center">
+        <h2 className="text-3xl text-center font-semibold tracking-widest text-primaryGreen">
+          AXIA
+        </h2>
+        {/* <div className="w-full flex items-center justify-center">
           <Image
             src="https://sagarhr.com/wp-content/uploads/2024/01/HR-Logos8-1536x375.png"
             alt="Sagar HR Logo"
@@ -14,7 +17,7 @@ const Footer = () => {
             width={250}
             priority
           />
-        </div>
+        </div> */}
         <p className="text-sm tracking-wide w-full text-center text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, id
           minima enim vitae incidunt sed pariatur iure recusandae nobis porro.

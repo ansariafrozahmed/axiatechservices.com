@@ -3,7 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="templateContainer py-4 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-10">
+    <div
+      id="about"
+      className="templateContainer py-4 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-10"
+    >
       <div className="w-full lg:w-[40%] ">
         <div className="lg:h-[450px] w-full">
           <Image

@@ -30,20 +30,23 @@ const Ourservice = () => {
     },
   ];
   return (
-    <div className="templateContainer py-4 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-8">
+    <div
+      id="services"
+      className="templateContainer py-4 md:py-6 lg:py-10 flex flex-col lg:flex-row gap-2 lg:gap-8"
+    >
       <div className="w-full lg:w-[45%] ">
         <div className="h-full w-full">
           <Image
             src="/banner02.jpg"
             alt=""
-            className="w-full px-5 h-full object-cover"
+            className="w-full lg:px-5 h-full object-cover"
             height={600}
             sizes="100vw"
             width={500}
           />
         </div>
       </div>
-      <div className="space-y-10 w-[55%] py-6">
+      <div className="space-y-10 w-full lg:w-[55%] py-6">
         <div className="space-y-3">
           <span className="text-primaryDark uppercase tracking-widest font-normal text-sm">
             WHAT WE DO
@@ -57,7 +60,7 @@ const Ourservice = () => {
             Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-14">
           {data.map((item, index) => (
             <div key={index} className="space-y-2">
               <div>
