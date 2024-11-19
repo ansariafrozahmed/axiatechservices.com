@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white ">
+    <header className="bg-white sticky top-0">
       <nav className="container mx-auto flex items-center justify-between py-4 px-5 md:px-10">
         {/* Logo Section */}
         <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
@@ -31,6 +31,9 @@ const Header = () => {
           </a>
           <a href="#about" className="hover-class">
             About
+          </a>
+          <a href="#portfolio" className="hover-class">
+            Our Portfolio
           </a>
           <a href="#services" className="hover-class">
             Services
@@ -110,22 +113,27 @@ const Header = () => {
         </div>
 
         <ul className="flex flex-col gap-7 p-5 text-xs font-medium uppercase tracking-widest">
-          <li>
-            <a href="#" className="hover:text-primaryGreen">
+          <li onClick={() => setIsMenuOpen(false)}>
+            <a href="" className="hover:text-primaryGreen">
               Home
             </a>
           </li>
-          <li>
+          <li onClick={() => setIsMenuOpen(false)}>
             <a href="#about" className="hover:text-primaryGreen">
               About
             </a>
           </li>
-          <li>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <a href="#portfolio" className="hover:text-primaryGreen">
+              Our Portfolio
+            </a>
+          </li>
+          <li onClick={() => setIsMenuOpen(false)}>
             <a href="#services" className="hover:text-primaryGreen">
               Services
             </a>
           </li>
-          <li>
+          <li onClick={() => setIsMenuOpen(false)}>
             <a href="#contact" className="hover:text-primaryGreen">
               Contact
             </a>

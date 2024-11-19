@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Axxia Tech Services",
-  description: "Axxia Tech Services",
+  title: "Axia Tech Services",
+  description: "Axia Tech Services",
 };
 
 export default function RootLayout({
