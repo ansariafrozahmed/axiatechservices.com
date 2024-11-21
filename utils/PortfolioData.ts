@@ -230,7 +230,7 @@ export const portfolioContent: PortfolioItem[] = [
     Restaurants: [
       {
         image: "/portfolio-mockups/restaurants/alnizami.webp",
-        title: "Ak nizami",
+        title: "AL nizami",
       },
       {
         image: "/portfolio-mockups/restaurants/skewer.webp",
