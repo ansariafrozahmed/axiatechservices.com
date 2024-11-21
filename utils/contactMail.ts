@@ -25,10 +25,10 @@ export const send: React.FC<SendFuncProps> = async ({
 
   try {
     await sendmail({
-      to: "ansariafroz720@gmail.com",
+      to: "info@axiatechservices.com",
       name: "Axia Tech Services",
       subject: "Enquiry From Axia Tech Services",
-      body: emailBody, // use the generated email template
+      body: emailBody,
     });
 
     return true; // Email sent successfully

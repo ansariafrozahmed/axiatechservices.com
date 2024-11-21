@@ -19,13 +19,11 @@ const Footer = () => {
           />
         </div> */}
         <p className="text-sm tracking-wide w-full text-center text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, id
-          minima enim vitae incidunt sed pariatur iure recusandae nobis porro.
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Iste omnis odio aperiam nulla suscipit illo ex
-          nesciunt quisquam similique saepe. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Facilis enim id eaque exercitationem vel
-          illum?
+          At Axia Tech Services, we are passionate about driving digital
+          transformation for businesses of all sizes. As a trusted provider of
+          web development, digital marketing, graphic design, SEO, social media
+          management, and app development services, we aim to deliver solutions
+          that are not only innovative but also tailored to your unique goals.
         </p>
         <hr />
         <p className="text-center text-sm">

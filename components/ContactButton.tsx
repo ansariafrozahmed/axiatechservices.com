@@ -22,7 +22,11 @@ type ContactFormValues = {
   service: string;
 };
 
-const ContactButton: React.FC = () => {
+interface ContactButtonProps {
+  text?: string;
+}
+
+const ContactButton: React.FC<ContactButtonProps> = ({ text }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm<ContactFormValues>();
@@ -72,9 +76,9 @@ const ContactButton: React.FC = () => {
       {/* Trigger Button */}
       <button
         onClick={showModal}
-        className="bg-primaryGreen text-white px-6 py-3 rounded text-xs tracking-widest uppercase font-medium hover:opacity-80 transition"
+        className="bg-primaryGreen text-white px-4 md:px-6 py-2.5 md:py-3 rounded text-xs tracking-widest uppercase font-medium hover:opacity-80 transition"
       >
-        Contact Us
+        {text}
       </button>
 
       {/* Modal */}

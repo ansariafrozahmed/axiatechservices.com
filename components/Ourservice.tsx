@@ -4,36 +4,41 @@ import React from "react";
 const Ourservice = () => {
   const data = [
     {
-      image: "/desktop.png",
+      image: "/coding.png",
       title: "Web Development",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "We create responsive, user-friendly websites tailored to your business needs. Enhance your online presence with cutting-edge design and functionality.",
     },
     {
-      image: "/desktop.png",
+      image: "/social-media.png",
       title: "Digital Marketing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Drive growth with targeted campaigns, SEO strategies, and social media engagement. Reach the right audience at the right time.",
     },
     {
-      image: "/desktop.png",
+      image: "/curve.png",
       title: "Graphic Designing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Elevate your brand with stunning visuals and creative designs. From logos to marketing materials, we craft impactful designs that stand out.",
     },
     {
-      image: "/desktop.png",
+      image: "/mobile-development.png",
       title: "App Development",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Build innovative, user-centric mobile apps to enhance customer engagement. From concept to launch, we deliver seamless solutions.",
     },
     {
-      image: "/desktop.png",
+      image: "/chat.png",
       title: "Bulk SMS",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Connect instantly with your audience through efficient bulk messaging. Perfect for promotions, alerts, and updates.",
     },
   ];
   return (
     <div className="bg-gray-100">
       <div
         id="services"
-        className="templateContainer py-4 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-2 lg:gap-8"
+        className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-2 lg:gap-8"
       >
         <div className="w-full lg:w-[45%] ">
           <div className="h-full w-full">
@@ -42,7 +47,7 @@ const Ourservice = () => {
               alt=""
               className="w-full lg:px-5 h-full object-cover"
               height={600}
-              sizes="100vw"
+              sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1100px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
               width={500}
             />
           </div>
@@ -55,10 +60,11 @@ const Ourservice = () => {
             <h2 className="text-3xl lg:text-5xl text-primaryGreen font-bold">
               OUR SERVICE
             </h2>
-            <p className="text-sm tracking-wide w-full lg:w-[90%] text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, id
-              minima enim vitae incidunt sed pariatur iure recusandae nobis
-              porro. Lorem ipsum dolor sit amet.
+            <p className="text-[13px] tracking-wide w-full lg:w-[90%] text-gray-700">
+              <span className="text-primaryGreen">Axia Tech Services</span>{" "}
+              offers expert web development, digital marketing, SEO, graphic
+              design, social media management, and app development. We combine
+              creativity and technology to elevate your brand and drive growth.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-14">
@@ -68,15 +74,15 @@ const Ourservice = () => {
                   <Image
                     src={item.image}
                     alt=""
-                    height={100}
-                    className="h-8 w-8"
-                    width={100}
+                    height={200}
+                    className="h-9 w-9"
+                    width={200}
                   />
                 </div>
                 <h3 className="text-lg lg:text-xl text-primaryDark tracking-wide uppercase">
                   {item.title}
                 </h3>
-                <p className="text-sm tracking-wide w-full  text-gray-700">
+                <p className="text-[13px] tracking-wide w-full  text-gray-700">
                   {item.description}
                 </p>
               </div>

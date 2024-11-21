@@ -11,8 +11,8 @@ const Home = () => {
       <Hero />
       <Ourservice />
       <Portfolio />
-      <About />
       <Stats />
+      <About />
     </>
   );
 };

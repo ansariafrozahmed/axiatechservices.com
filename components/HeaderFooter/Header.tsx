@@ -2,27 +2,29 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import ContactButton from "../ContactButton";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white sticky top-0">
-      <nav className="container mx-auto flex items-center justify-between py-4 px-5 md:px-10">
+    <header className="bg-white sticky top-0 z-50">
+      <nav className="container mx-auto flex items-center justify-between py-4 px-5 md:px-10 lg:py-2">
         {/* Logo Section */}
-        <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
+        {/* <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
           AXIA
-        </h2>
-        {/* <div className="w-32 lg:w-36">
+        </h2> */}
+        <a href={"#"} className="block w-32 lg:w-40 ">
           <Image
-            src="https://sagarhr.com/wp-content/uploads/2024/01/HR-Logos8-1536x375.png"
+            src="/logo/axialogowithoutbg.png"
             alt="Sagar HR Logo"
             className="w-full object-contain"
-            height={48}
-            width={192}
+            height={200}
+            width={500}
+            sizes="(min-width: 1040px) 160px, 122px"
             priority
           />
-        </div> */}
+        </a>
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center gap-8 text-xs tracking-widest font-medium uppercase">
@@ -41,8 +43,8 @@ const Header = () => {
         </div>
 
         {/* Contact Button */}
-        <div className="hidden lg:block">
-          <ContactButton />
+        <div className="">
+          <ContactButton text="Contact Us" />
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -77,19 +79,24 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center justify-between p-5">
-          {/* <div className="w-32">
+          <a
+            onClick={() => setIsMenuOpen(false)}
+            href="#"
+            className="block w-32 "
+          >
             <Image
-              src="https://sagarhr.com/wp-content/uploads/2024/01/HR-Logos8-1536x375.png"
+              src="/logo/axialogowithoutbg.png"
               alt="Sagar HR Logo"
               className="w-full object-contain"
-              height={48}
-              width={192}
+              height={200}
+              width={500}
+              sizes="128px"
               priority
             />
-          </div> */}
-          <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
+          </a>
+          {/* <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
             AXIA
-          </h2>
+          </h2> */}
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-800 focus:outline-none"
@@ -114,7 +121,7 @@ const Header = () => {
 
         <ul className="flex flex-col gap-7 p-5 text-xs font-medium uppercase tracking-widest">
           <li onClick={() => setIsMenuOpen(false)}>
-            <a href="" className="hover:text-primaryGreen">
+            <a href="#" className="hover:text-primaryGreen">
               Home
             </a>
           </li>
@@ -131,11 +138,6 @@ const Header = () => {
           <li onClick={() => setIsMenuOpen(false)}>
             <a href="#services" className="hover:text-primaryGreen">
               Services
-            </a>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <a href="#contact" className="hover:text-primaryGreen">
-              Contact
             </a>
           </li>
         </ul>

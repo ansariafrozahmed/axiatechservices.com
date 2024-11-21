@@ -6,6 +6,12 @@
   scroll-behavior: smooth;
 }
 
+#services,
+#portfolio,
+#about {
+  scroll-margin-top: 70px; /* Adjust this value to work for both states */
+}
+
 .templateContainer {
   @apply container mx-auto px-4 md:px-8 lg:px-12;
 }
