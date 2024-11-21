@@ -9,7 +9,7 @@ const About = () => {
         className="templateContainer py-8 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-10"
       >
         <div className="w-full lg:w-[40%] ">
-          <div data-aos="zoom-in-up" className="lg:h-[450px] w-full">
+          <div data-aos="zoom-in" className="lg:h-[450px] w-full">
             <Image
               src="https://landing.zytheme.com/legal/assets/images/team/team-4.png"
               alt=""
@@ -24,21 +24,21 @@ const About = () => {
         <div className="w-full lg:w-[60%] my-auto space-y-6">
           <div className="space-y-2">
             <span
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="text-primaryDark uppercase tracking-widest font-normal text-sm"
             >
               WHO WE ARE
             </span>
             <h2
-              data-aos="fade-left"
-              className="text-3xl lg:text-5xl text-primaryGreen font-medium"
+              data-aos="fade-up"
+              className="text-3xl lg:text-5xl text-primaryGreen font-bold"
             >
               ABOUT US
             </h2>
           </div>
           {/* <div className="h-[2px] rounded-full w-24 bg-primaryGreen"></div> */}
           <p
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="text-sm tracking-wider w-full lg:w-[90%] text-gray-700 leading-relaxed"
           >
             At Axia Tech Services, we are passionate about driving digital
@@ -50,7 +50,7 @@ const About = () => {
             to help your brand stand out in today’s competitive landscape.
           </p>
           <p
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="text-sm tracking-wider w-full lg:w-[90%] text-gray-700 leading-relaxed"
           >
             We believe in building long-lasting relationships with our clients

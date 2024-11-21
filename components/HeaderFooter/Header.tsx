@@ -3,9 +3,21 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ContactButton from "../ContactButton";
 import Link from "next/link";
-
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleScroll = (targetId: any) => {
+    const target = document.getElementById(targetId);
+    if (target) {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: target, offsetY: 58 }, // Offset for fixed header, if any
+        ease: "power2.inOut",
+      });
+    }
+  };
 
   return (
     <header className="bg-white sticky top-0 z-50">
@@ -28,16 +40,44 @@ const Header = () => {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center gap-8 text-xs tracking-widest font-medium uppercase">
-          <a href="#" className="hover-class">
+          <a
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("home");
+            }}
+            className="hover-class"
+          >
             Home
           </a>
-          <a href="#about" className="hover-class">
+          <a
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("about");
+            }}
+            className="hover-class"
+          >
             About
           </a>
-          <a href="#portfolio" className="hover-class">
+          <a
+            href="#portfolio"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("portfolio");
+            }}
+            className="hover-class"
+          >
             Our Portfolio
           </a>
-          <a href="#services" className="hover-class">
+          <a
+            href="#services"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("services");
+            }}
+            className="hover-class"
+          >
             Services
           </a>
         </div>

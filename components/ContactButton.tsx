@@ -89,7 +89,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ text }) => {
         footer={null}
         destroyOnClose
       >
-        <div className="space-y-4 p-2">
+        <div className="space-y-4 pt-6">
           {/* Header */}
           <div className="space-y-1">
             <h2 className="text-primaryDark text-xl lg:text-2xl uppercase">

@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import NewPortfolio from "@/components/NewPortfolio";
 import Ourservice from "@/components/Ourservice";
 import Portfolio from "@/components/Portfolio";
 import Stats from "@/components/Stats";
@@ -12,7 +13,8 @@ const Home = () => {
       <Hero />
       <TextFillOnScroll />
       <Ourservice />
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <NewPortfolio />
       <Stats />
       <About />
     </>

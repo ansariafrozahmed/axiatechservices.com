@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="templateContainer flex flex-col lg:flex-row lg:h-[550px] gap-6 pb-6">
       <div
-        data-aos="zoom-in-up"
+        data-aos="zoom-out"
         className="w-full lg:w-[63%] my-auto pt-14 lg:pt-0 space-y-4"
       >
         <span className="text-primaryGreen uppercase tracking-widest font-normal text-sm">
@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
       {/* ----------------- */}
       <div className="w-full lg:w-[37%] ">
-        <div data-aos="zoom-in-up" className="h-full w-full">
+        <div data-aos="zoom-out" className="h-full w-full">
           <Image
             src="https://sagarhr.com/wp-content/uploads/2024/01/office-manager-ready-to-listen-clients-friendly-p-2022-10-11-17-54-04-utc.png"
             alt=""

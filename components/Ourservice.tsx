@@ -38,36 +38,37 @@ const Ourservice = () => {
     <div className="bg-gray-100">
       <div
         id="services"
-        className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-2 lg:gap-8"
+        className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-y-2 lg:gap-8"
       >
         <div className="w-full lg:w-[45%] ">
           <div data-aos="fade-up" className="h-full  w-full">
             <Image
               src="/banner02.jpg"
               alt=""
-              className="w-full lg:px-5 h-full object-cover"
-              height={600}
-              sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1200px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
-              width={500}
+              className="w-full px-0 lg:px-5 h-full object-cover"
+              height={800}
+              // sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1200px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
+              sizes="100vw"
+              width={800}
             />
           </div>
         </div>
         <div className="space-y-10 w-full lg:w-[55%] py-6">
           <div className="space-y-3">
             <span
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="text-primaryDark uppercase tracking-widest font-normal text-sm"
             >
               WHAT WE DO
             </span>
             <h2
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="text-3xl lg:text-5xl text-primaryGreen font-medium"
             >
               OUR SERVICE
             </h2>
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="text-[13px] tracking-wide w-full lg:w-[90%] text-gray-700"
             >
               <span className="text-primaryGreen">Axia Tech Services</span>{" "}

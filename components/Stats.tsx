@@ -20,26 +20,26 @@ const Stats = () => {
       <div className="templateContainer py-8 md:py-6 lg:py-10 flex items-center justify-start flex-col lg:flex-row  gap-10 lg:gap-16">
         <div className="text-center lg:text-left space-y-2">
           <span
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="pl-1 text-primaryGreen uppercase tracking-widest font-normal text-sm"
           >
             OUR APPROACH
           </span>
           <div>
             <h2
-              data-aos="fade-right"
+              data-aos="fade-up"
               className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
             >
               Design
             </h2>
             <h2
-              data-aos="fade-right"
+              data-aos="fade-up"
               className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
             >
               Develop
             </h2>
             <h2
-              data-aos="fade-right"
+              data-aos="fade-up"
               className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
             >
               Deploy
