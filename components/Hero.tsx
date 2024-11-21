@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="templateContainer flex flex-col lg:flex-row lg:h-[550px] gap-6 pb-6">
       <div
         data-aos="zoom-out"
-        className="w-full lg:w-[63%] my-auto pt-14 lg:pt-0 space-y-4"
+        className="w-full lg:w-[63%] my-auto pt-8 lg:pt-0 space-y-4"
       >
         <span className="text-primaryGreen uppercase tracking-widest font-normal text-sm">
           Axia Tech Services

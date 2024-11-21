@@ -49,14 +49,25 @@ const ScrollAnimation: React.FC = () => {
   }, []);
 
   return (
-    <div className="templateContainer hidden lg:block py-8 md:py-6 lg:py-16">
+    <div className="templateContainer block py-8 md:py-6 lg:py-16">
+      {/* DESKTOP */}
       <p
-        className="reveal-type text-[18px] lg:text-[52px] text-left text-primaryDark uppercase tracking-wide font-medium leading-tight"
-        data-bg-color="#cccccc"
-        data-fg-color="teal"
+        className="hidden lg:block reveal-type text-[52px] text-left text-primaryDark uppercase tracking-wide font-medium leading-tight"
+        data-bg-color="#dedcdc"
+        data-fg-color="#35797B"
       >
         We believe in building long-lasting <br />
         relationships with our clients by <br /> focusing on their success.
+      </p>
+      {/* MOBILE */}
+      <p
+        className="lg:hidden reveal-type text-[35px] text-left text-primaryDark uppercase tracking-wider font-semibold leading-tight"
+        data-bg-color="#dedcdc"
+        data-fg-color="#35797B"
+      >
+        We believe <br /> in building <br /> long lasting <br /> relationships{" "}
+        <br /> with our <br /> clients by <br /> focusing on <br /> their
+        success.
       </p>
     </div>
   );

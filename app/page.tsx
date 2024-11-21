@@ -1,11 +1,14 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import NewPortfolio from "@/components/NewPortfolio";
 import Ourservice from "@/components/Ourservice";
-import Portfolio from "@/components/Portfolio";
 import Stats from "@/components/Stats";
 import TextFillOnScroll from "@/components/TextFillOnScroll";
+import dynamic from "next/dynamic";
 import React from "react";
+
+const DynamicHeader = dynamic(() => import("@/components/NewPortfolio"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
@@ -13,8 +16,7 @@ const Home = () => {
       <Hero />
       <TextFillOnScroll />
       <Ourservice />
-      {/* <Portfolio /> */}
-      <NewPortfolio />
+      <DynamicHeader />
       <Stats />
       <About />
     </>

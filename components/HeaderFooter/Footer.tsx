@@ -12,7 +12,7 @@ const Footer = () => {
           <Image
             src="/logo/axialogowithoutbg.png"
             alt=""
-            className="w-full lg:w-40 object-contain"
+            className="w-1/2 lg:w-40 object-contain"
             height={100}
             width={250}
             priority

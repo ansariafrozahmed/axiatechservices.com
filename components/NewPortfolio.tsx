@@ -37,14 +37,14 @@ const NewPortfolio = () => {
 
       {/* Tabs */}
       <div
-        className="flex overflow-x-auto mt-6 pb-2 lg:justify-center"
+        className="flex overflow-x-auto mt-4 lg:mt-6 pb-2 lg:justify-center"
         style={{ scrollbarWidth: "none" }}
       >
         {categoryNames.map((category) => (
           <button
             key={category}
             onClick={() => setActiveTab(category)}
-            className={`uppercase tracking-wider text-[13px] border-b-2  px-3 py-1.5 font-normal text-primaryDark transition ${
+            className={`uppercase  tracking-wider text-[13px] border-b-2  px-3 py-1.5 font-normal text-primaryDark transition ${
               activeTab === category
                 ? " border-primaryGreen text-primaryGreen "
                 : "border-white"
@@ -56,7 +56,7 @@ const NewPortfolio = () => {
       </div>
 
       {/* Active Tab Content with GSAP Animation */}
-      <div className="mt-8">
+      <div className="mt-2 lg:mt-8">
         <div
           ref={contentRef}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
