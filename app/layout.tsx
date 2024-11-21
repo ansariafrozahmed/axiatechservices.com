@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/HeaderFooter/Header";
 import Footer from "@/components/HeaderFooter/Footer";
+import AosComp from "@/components/Aos";
+import LenisWrapper from "@/components/LenisWrapper";
 
 const FRONTEND = "https://axiatechservices.com";
 
@@ -43,10 +45,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans`}>
-        <Header />
-        {children}
-        <Footer />
+      <body>
+        <LenisWrapper>
+          <AosComp />
+          <Header />
+          {children}
+          <Footer />
+        </LenisWrapper>
       </body>
     </html>
   );

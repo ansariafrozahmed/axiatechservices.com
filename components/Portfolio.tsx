@@ -48,12 +48,16 @@ const Portfolio = () => {
   ];
   return (
     <div id="portfolio" className="templateContainer py-8 md:py-6 lg:py-14">
-      <h2 className="text-3xl lg:text-5xl text-center text-primaryGreen font-bold">
+      <h2
+        data-aos="fade-up"
+        className="text-3xl lg:text-5xl text-center text-primaryGreen font-medium"
+      >
         OUR PORTFOLIO
       </h2>
       <Swiper
+        data-aos="fade-up"
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         navigation={true}
@@ -81,7 +85,7 @@ const Portfolio = () => {
                   <span className="text-primaryDark uppercase tracking-widest font-normal text-sm">
                     {item.type}
                   </span>
-                  <h2 className="text-3xl lg:text-5xl text-primaryGreen font-semibold">
+                  <h2 className="text-3xl lg:text-5xl text-primaryGreen font-medium">
                     {item.title}
                   </h2>
                   <p className="text-sm leading-relaxed tracking-wide w-full lg:w-[90%] text-gray-700">

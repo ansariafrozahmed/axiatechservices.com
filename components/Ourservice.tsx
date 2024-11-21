@@ -41,26 +41,35 @@ const Ourservice = () => {
         className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-2 lg:gap-8"
       >
         <div className="w-full lg:w-[45%] ">
-          <div className="h-full w-full">
+          <div data-aos="fade-up" className="h-full  w-full">
             <Image
               src="/banner02.jpg"
               alt=""
               className="w-full lg:px-5 h-full object-cover"
               height={600}
-              sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1100px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
+              sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1200px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
               width={500}
             />
           </div>
         </div>
         <div className="space-y-10 w-full lg:w-[55%] py-6">
           <div className="space-y-3">
-            <span className="text-primaryDark uppercase tracking-widest font-normal text-sm">
+            <span
+              data-aos="fade-left"
+              className="text-primaryDark uppercase tracking-widest font-normal text-sm"
+            >
               WHAT WE DO
             </span>
-            <h2 className="text-3xl lg:text-5xl text-primaryGreen font-bold">
+            <h2
+              data-aos="fade-left"
+              className="text-3xl lg:text-5xl text-primaryGreen font-medium"
+            >
               OUR SERVICE
             </h2>
-            <p className="text-[13px] tracking-wide w-full lg:w-[90%] text-gray-700">
+            <p
+              data-aos="fade-left"
+              className="text-[13px] tracking-wide w-full lg:w-[90%] text-gray-700"
+            >
               <span className="text-primaryGreen">Axia Tech Services</span>{" "}
               offers expert web development, digital marketing, SEO, graphic
               design, social media management, and app development. We combine
@@ -69,7 +78,7 @@ const Ourservice = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-14">
             {data.map((item, index) => (
-              <div key={index} className="space-y-2">
+              <div data-aos="fade-up" key={index} className="space-y-2">
                 <div>
                   <Image
                     src={item.image}

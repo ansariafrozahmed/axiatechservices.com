@@ -14,7 +14,7 @@ const Header = () => {
         {/* <h2 className="text-3xl font-semibold tracking-widest text-primaryGreen">
           AXIA
         </h2> */}
-        <a href={"#"} className="block w-32 lg:w-40 ">
+        <a href={"#"} className="block w-24 lg:w-32 ">
           <Image
             src="/logo/axialogowithoutbg.png"
             alt="Sagar HR Logo"
@@ -82,7 +82,7 @@ const Header = () => {
           <a
             onClick={() => setIsMenuOpen(false)}
             href="#"
-            className="block w-32 "
+            className="block w-24"
           >
             <Image
               src="/logo/axialogowithoutbg.png"

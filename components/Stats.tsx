@@ -19,17 +19,29 @@ const Stats = () => {
     <div className="bg-gray-100">
       <div className="templateContainer py-8 md:py-6 lg:py-10 flex items-center justify-start flex-col lg:flex-row  gap-10 lg:gap-16">
         <div className="text-center lg:text-left space-y-2">
-          <span className="pl-1 text-primaryGreen uppercase tracking-widest font-normal text-sm">
+          <span
+            data-aos="fade-left"
+            className="pl-1 text-primaryGreen uppercase tracking-widest font-normal text-sm"
+          >
             OUR APPROACH
           </span>
           <div>
-            <h2 className="text-6xl lg:text-6xl uppercase text-primaryGreen font-semibold">
+            <h2
+              data-aos="fade-right"
+              className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
+            >
               Design
             </h2>
-            <h2 className="text-6xl lg:text-6xl uppercase text-primaryGreen font-semibold">
+            <h2
+              data-aos="fade-right"
+              className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
+            >
               Develop
             </h2>
-            <h2 className="text-6xl lg:text-6xl uppercase text-primaryGreen font-semibold">
+            <h2
+              data-aos="fade-right"
+              className="text-6xl lg:text-6xl uppercase text-primaryGreen font-medium"
+            >
               Deploy
             </h2>
           </div>
@@ -37,6 +49,7 @@ const Stats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full">
           {data.map((item, index) => (
             <div
+              data-aos="fade-up"
               key={index}
               className="flex flex-col gap-4 justify-center items-center"
             >
