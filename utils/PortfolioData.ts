@@ -5,59 +5,56 @@ export const portfolioContent: PortfolioItem[] = [
     Business: [
       {
         image: "/portfolio-mockups/business/mithiyaj.webp",
-        title: "Ecommerce Project 1",
+        title: "Mithiyaj",
       },
       {
         image: "/portfolio-mockups/business/yogeshprashna.webp",
-        title: "Ecommerce Project 2",
+        title: "Yogeshprashna",
       },
       {
         image: "/portfolio-mockups/business/abyaz.webp",
-        title: "Ecommerce Project 2",
+        title: "Abyaz",
       },
       {
         image: "/portfolio-mockups/business/ahadmarine.webp",
-        title: "Ecommerce Project 2",
+        title: "Ahad marine",
       },
       {
         image: "/portfolio-mockups/business/alhusaini.webp",
-        title: "Ecommerce Project 2",
+        title: "Al husaini",
       },
       {
         image: "/portfolio-mockups/business/annex.webp",
-        title: "Ecommerce Project 2",
+        title: "Annex",
       },
       {
         image: "/portfolio-mockups/business/dpcsaudi.webp",
-        title: "Ecommerce Project 1",
+        title: "dpc saudi",
       },
       {
         image: "/portfolio-mockups/business/goldendiamond.webp",
-        title: "Ecommerce Project 1",
+        title: "Golden Diamond",
       },
       {
         image: "/portfolio-mockups/business/metaltechport.webp",
-        title: "Ecommerce Project 1",
+        title: "MTPC",
       },
-      {
-        image: "/portfolio-mockups/business/mithiyaj.webp",
-        title: "Ecommerce Project 1",
-      },
+
       {
         image: "/portfolio-mockups/business/oasisconsulting.webp",
-        title: "Ecommerce Project 1",
+        title: "Osaisi Consulting",
       },
       {
         image: "/portfolio-mockups/business/puresaff.webp",
-        title: "Ecommerce Project 1",
+        title: "Pure Saff",
       },
       {
         image: "/portfolio-mockups/business/saudiwells.webp",
-        title: "Ecommerce Project 1",
+        title: "Saudi Wells",
       },
       {
         image: "/portfolio-mockups/business/skcoolworld.webp",
-        title: "Ecommerce Project 1",
+        title: "SK cool world",
       },
     ],
   },
@@ -65,35 +62,35 @@ export const portfolioContent: PortfolioItem[] = [
     Builders: [
       {
         image: "/portfolio-mockups/builders/archicgreenscape.webp",
-        title: "Builders Project 1",
+        title: "Archic Green Scape",
       },
-      {
-        image: "/portfolio-mockups/builders/bareziya_arch.png",
-        title: "Builders Project 2",
-      },
+      // {
+      //   image: "/portfolio-mockups/builders/bareziya_arch.png",
+      //   title: "Bareziya",
+      // },
       {
         image: "/portfolio-mockups/builders/cementric.webp",
-        title: "Builders Project 2",
+        title: "Cementric",
       },
       {
         image: "/portfolio-mockups/builders/eastman_infra.webp",
-        title: "Builders Project 2",
+        title: "East man Infra",
       },
-      {
-        image: "/portfolio-mockups/builders/folksco.webp",
-        title: "Builders Project 2",
-      },
+      // {
+      //   image: "/portfolio-mockups/builders/folksco.webp",
+      //   title: "Folksco",
+      // },
       {
         image: "/portfolio-mockups/builders/pmdecor.webp",
-        title: "Builders Project 2",
+        title: "PM decor",
       },
       {
         image: "/portfolio-mockups/builders/southfield.webp",
-        title: "Builders Project 2",
+        title: "South Field",
       },
       {
         image: "/portfolio-mockups/builders/zzconsultant.webp",
-        title: "Builders Project 2",
+        title: "zz consultants",
       },
     ],
   },
@@ -101,39 +98,39 @@ export const portfolioContent: PortfolioItem[] = [
     Catalogue: [
       {
         image: "/portfolio-mockups/catalogue/alnoorminar.webp",
-        title: "Catalogue Project 1",
+        title: "Alnoor Minar",
       },
       {
         image: "/portfolio-mockups/catalogue/asaudio.webp",
-        title: "Catalogue Project 1",
+        title: "AS Audio",
       },
       {
         image: "/portfolio-mockups/catalogue/asrehexports.webp",
-        title: "Catalogue Project 1",
+        title: "Asreh exports",
       },
       {
         image: "/portfolio-mockups/catalogue/globalhardware.webp",
-        title: "Catalogue Project 1",
+        title: "global hardware",
       },
       {
         image: "/portfolio-mockups/catalogue/mirzaagrofoods.webp",
-        title: "Catalogue Project 1",
+        title: "mirza agro foods",
       },
       {
         image: "/portfolio-mockups/catalogue/redsailexports.webp",
-        title: "Catalogue Project 1",
+        title: "redsail exports",
       },
       {
         image: "/portfolio-mockups/catalogue/trigger%20exam_barber.webp",
-        title: "Catalogue Project 1",
+        title: "trigger exim",
       },
       {
         image: "/portfolio-mockups/catalogue/padmavatichains.webp",
-        title: "Catalogue Project 1",
+        title: "padmavatichains",
       },
       {
         image: "/portfolio-mockups/catalogue/zoheblala.webp",
-        title: "Catalogue Project 1",
+        title: "zoheb lala",
       },
     ],
   },
@@ -141,27 +138,27 @@ export const portfolioContent: PortfolioItem[] = [
     Logistics: [
       {
         image: "/portfolio-mockups/logistics/adhiklogistics.webp",
-        title: "Catalogue Project 1",
+        title: "Aadhikh logistics",
       },
       {
         image: "/portfolio-mockups/logistics/amarclearing.webp",
-        title: "Catalogue Project 1",
+        title: "Amar Clearing",
       },
       {
         image: "/portfolio-mockups/logistics/amclogistics.webp",
-        title: "Catalogue Project 1",
+        title: "AMCa logistics",
       },
       {
         image: "/portfolio-mockups/logistics/index.webp",
-        title: "Catalogue Project 1",
+        title: "Index transport",
       },
       {
         image: "/portfolio-mockups/logistics/marsairocean.webp",
-        title: "Catalogue Project 1",
+        title: "Mars air ocean",
       },
       {
         image: "/portfolio-mockups/logistics/pacematters.webp",
-        title: "Catalogue Project 1",
+        title: "Pace matter",
       },
     ],
   },
@@ -169,55 +166,51 @@ export const portfolioContent: PortfolioItem[] = [
     Ecommerce: [
       {
         image: "/portfolio-mockups/ecommerce/cotton-culture.webp",
-        title: "Builders Project 1",
+        title: "Chief Parfums",
       },
       {
         image: "/portfolio-mockups/ecommerce/almarjaan.webp",
-        title: "Builders Project 2",
+        title: "Al Marjaan",
       },
       {
         image: "/portfolio-mockups/ecommerce/arabiantea.webp",
-        title: "Builders Project 2",
+        title: "Arabian Tea",
       },
       {
         image: "/portfolio-mockups/ecommerce/bsauto.webp",
-        title: "Builders Project 2",
-      },
-      {
-        image: "/portfolio-mockups/ecommerce/chief parfums.webp",
-        title: "Builders Project 2",
+        title: "BS auto",
       },
       {
         image: "/portfolio-mockups/ecommerce/alhid.webp",
-        title: "Builders Project 2",
+        title: "Ahlid",
       },
       {
         image: "/portfolio-mockups/ecommerce/e commerce_sootbootwala.webp",
-        title: "Builders Project 2",
+        title: "soot boot wala",
       },
       {
         image: "/portfolio-mockups/ecommerce/grandtruck.webp",
-        title: "Builders Project 2",
+        title: "grand truck",
       },
       {
         image: "/portfolio-mockups/ecommerce/mistleblue.webp",
-        title: "Builders Project 2",
+        title: "mistle blue",
       },
       {
         image: "/portfolio-mockups/ecommerce/monter.webp",
-        title: "Builders Project 2",
+        title: "monter",
       },
       {
         image: "/portfolio-mockups/ecommerce/newqualityware.webp",
-        title: "Builders Project 2",
+        title: "new quality ware",
       },
       {
         image: "/portfolio-mockups/ecommerce/perfumistic.webp",
-        title: "Builders Project 2",
+        title: "perfumistic",
       },
       {
         image: "/portfolio-mockups/ecommerce/trillionair.webp",
-        title: "Builders Project 2",
+        title: "trillionaire",
       },
     ],
   },
@@ -225,11 +218,11 @@ export const portfolioContent: PortfolioItem[] = [
     Education: [
       {
         image: "/portfolio-mockups/education/capdiw.webp",
-        title: "Builders Project 1",
+        title: "Capdiw",
       },
       {
         image: "/portfolio-mockups/education/expert4expat.webp",
-        title: "Builders Project 2",
+        title: "xperts 4 expats",
       },
     ],
   },
@@ -237,11 +230,11 @@ export const portfolioContent: PortfolioItem[] = [
     Restaurants: [
       {
         image: "/portfolio-mockups/restaurants/alnizami.webp",
-        title: "Builders Project 1",
+        title: "Ak nizami",
       },
       {
         image: "/portfolio-mockups/restaurants/skewer.webp",
-        title: "Builders Project 2",
+        title: "Skewer",
       },
     ],
   },
@@ -249,21 +242,21 @@ export const portfolioContent: PortfolioItem[] = [
     Trusts: [
       {
         image: "/portfolio-mockups/trust-properties/behuman.webp",
-        title: "Builders Project 1",
+        title: "Behuman",
       },
       {
         image: "/portfolio-mockups/trust-properties/dunes.webp",
-        title: "Builders Project 2",
+        title: "Dunes",
       },
       {
         image: "/portfolio-mockups/trust-properties/kolsamohalla.webp",
-        title: "Builders Project 2",
+        title: "kolsa mohalla",
       },
-      {
-        image:
-          "/portfolio-mockups/trust-properties/ngo_firsthelp_charitable.webp",
-        title: "Builders Project 2",
-      },
+      // {
+      //   image:
+      //     "/portfolio-mockups/trust-properties/ngo_firsthelp_charitable.webp",
+      //   title: "",
+      // },
       {
         image: "/portfolio-mockups/trust-properties/wecare.webp",
         title: "Builders Project 2",
@@ -274,19 +267,19 @@ export const portfolioContent: PortfolioItem[] = [
     Travels: [
       {
         image: "/portfolio-mockups/travel/alhusaini.webp",
-        title: "Builders Project 1",
+        title: "Al Husaini",
       },
       {
         image: "/portfolio-mockups/travel/globexmanpower.webp",
-        title: "Builders Project 2",
+        title: "Globex Man Power",
       },
       {
         image: "/portfolio-mockups/travel/riyazint.webp",
-        title: "Builders Project 2",
+        title: "Riyaz International",
       },
       {
         image: "/portfolio-mockups/travel/zubair.webp",
-        title: "Builders Project 2",
+        title: "Zubair",
       },
     ],
   },
@@ -294,11 +287,11 @@ export const portfolioContent: PortfolioItem[] = [
     "Interior Designer": [
       {
         image: "/portfolio-mockups/interior/bareziya_arch.png",
-        title: "Builders Project 1",
+        title: "Bareziya Architects",
       },
       {
         image: "/portfolio-mockups/interior/folksco.webp",
-        title: "Builders Project 2",
+        title: "Folksco",
       },
     ],
   },

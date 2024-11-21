@@ -6,7 +6,7 @@ import TextFillOnScroll from "@/components/TextFillOnScroll";
 import dynamic from "next/dynamic";
 import React from "react";
 
-const DynamicHeader = dynamic(() => import("@/components/NewPortfolio"), {
+const DynamicPortfolio = dynamic(() => import("@/components/NewPortfolio"), {
   ssr: false,
 });
 
@@ -16,9 +16,9 @@ const Home = () => {
       <Hero />
       <TextFillOnScroll />
       <Ourservice />
-      <DynamicHeader />
-      <Stats />
       <About />
+      <DynamicPortfolio />
+      <Stats />
     </>
   );
 };

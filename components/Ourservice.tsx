@@ -38,7 +38,7 @@ const Ourservice = () => {
     <div className="bg-gray-100">
       <div
         id="services"
-        className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-y-2 lg:gap-8"
+        className="templateContainer py-8 md:py-6 lg:py-14 flex flex-col lg:flex-row gap-2 lg:gap-8"
       >
         <div className="w-full lg:w-[45%] ">
           <div data-aos="fade-up" className="h-full  w-full">
@@ -48,7 +48,7 @@ const Ourservice = () => {
               className="w-full px-0 lg:px-5 h-full object-cover"
               height={800}
               // sizes="(min-width: 1540px) 894px, (min-width: 1280px) 1200px, (min-width: 1040px) 363px, (min-width: 780px) 704px, (min-width: 680px) 608px, calc(94.44vw - 15px)"
-              sizes="100vw"
+              // sizes="100vw"
               width={800}
             />
           </div>
@@ -79,7 +79,7 @@ const Ourservice = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-14">
             {data.map((item, index) => (
-              <div data-aos="fade-up" key={index} className="space-y-2">
+              <div data-aos="fade-up" key={index} className="space-y-3">
                 <div>
                   <Image
                     src={item.image}
@@ -89,7 +89,7 @@ const Ourservice = () => {
                     width={200}
                   />
                 </div>
-                <h3 className="text-lg lg:text-xl text-primaryDark tracking-wide uppercase">
+                <h3 className="text-xl text-primaryGreen tracking-wide  uppercase">
                   {item.title}
                 </h3>
                 <p className="text-[13px] tracking-wide w-full  text-gray-700">
