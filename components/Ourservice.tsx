@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import service from "@/public/home-image/sevices.jpg";
 
 const Ourservice = () => {
   const data = [
@@ -43,7 +44,7 @@ const Ourservice = () => {
         <div className="w-full lg:w-[45%] ">
           <div data-aos="fade-up" className="h-full  w-full">
             <Image
-              src="/banner02.jpg"
+              src={service.src}
               alt=""
               className="w-full px-0 lg:px-5 h-full object-cover"
               height={800}

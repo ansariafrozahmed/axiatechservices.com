@@ -1,17 +1,18 @@
 import Image from "next/image";
 import React from "react";
+import about from "@/public/home-image/about.jpg";
 
 const About = () => {
   return (
     <div className="">
       <div
         id="about"
-        className="templateContainer py-8 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-10"
+        className="templateContainer py-8 md:py-6 lg:py-10 flex flex-col lg:flex-row  gap-20"
       >
-        <div className="w-full lg:w-[40%] ">
+        <div className="w-full lg:w-[50%] ">
           <div data-aos="zoom-in" className="lg:h-[450px] w-full">
             <Image
-              src="https://landing.zytheme.com/legal/assets/images/team/team-4.png"
+              src={about.src}
               alt=""
               className="w-full px-5 h-full object-contain"
               height={600}
@@ -21,7 +22,7 @@ const About = () => {
             <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div>
           </div>
         </div>
-        <div className="w-full lg:w-[60%] my-auto space-y-6">
+        <div className="w-full lg:w-[50%] my-auto space-y-6">
           <div className="space-y-2">
             <span
               data-aos="fade-up"
