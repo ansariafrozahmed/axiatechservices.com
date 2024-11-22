@@ -7,7 +7,8 @@ import Image from "next/image";
 const NewPortfolio = () => {
   const [activeTab, setActiveTab] = useState("Business");
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const portfolioRef = useRef<HTMLDivElement | null>(null); // Typed portfolioRef
+  const portfolioRef = useRef<HTMLDivElement | null>(null);
+  const [tabChanged, setTabChanges] = useState<number | null>(null);
 
   // Extract category names dynamically
   const categoryNames = portfolioContent.map((item) => Object.keys(item)[0]);
@@ -25,18 +26,21 @@ const NewPortfolio = () => {
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       );
     }
-
-    // Scroll to the portfolio section when the tab changes
-    if (portfolioRef.current) {
-      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
-    }
   }, [activeTab]);
+
+  useEffect(() => {
+    if (tabChanged) {
+      if (portfolioRef.current) {
+        portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [tabChanged]);
 
   return (
     <div className="bg-gray-100">
       <div
+        ref={portfolioRef}
         id="portfolio"
-        ref={portfolioRef} // Assign the reference to the portfolio section
         className="templateContainer py-6 lg:py-12"
       >
         <h2
@@ -47,14 +51,14 @@ const NewPortfolio = () => {
         </h2>
 
         {/* Tabs */}
-        <div
-          className="flex overflow-x-auto sticky top-[55px] z-40 bg-gray-100 pt-4 lg:mt-6 pb-2 lg:justify-center"
-          style={{ scrollbarWidth: "none" }}
-        >
-          {categoryNames.map((category) => (
+        <div className="flex overflow-x-auto sticky top-[55px] z-40 bg-gray-100 pt-4 lg:mt-6 pb-2 lg:justify-center">
+          {categoryNames.map((category, index) => (
             <button
               key={category}
-              onClick={() => setActiveTab(category)}
+              onClick={() => {
+                setActiveTab(category);
+                setTabChanges(index);
+              }}
               className={`uppercase  tracking-wider text-[13px] border-b-2  px-3 py-1.5 font-normal text-primaryDark transition ${
                 activeTab === category
                   ? " border-primaryGreen text-primaryGreen "
