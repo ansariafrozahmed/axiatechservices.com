@@ -19,7 +19,7 @@ const About = () => {
               sizes="(min-width: 1540px) 600px, (min-width: 1280px) 418px, (min-width: 1040px) 315px, (min-width: 780px) 664px, (min-width: 680px) 568px, calc(94.44vw - 55px)"
               width={500}
             />
-            <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div>
+            {/* <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div> */}
           </div>
         </div>
         <div className="w-full lg:w-[50%] my-auto space-y-6">

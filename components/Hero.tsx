@@ -41,7 +41,7 @@ const Hero = () => {
             // sizes="(min-width: 1540px) 484px, (min-width: 1280px) 389px, (min-width: 1040px) 294px, (min-width: 780px) 664px, (min-width: 680px) 568px, calc(94.44vw - 55px)"
             width={1600}
           />
-          <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div>
+          {/* <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div> */}
         </div>
       </div>
     </div>

@@ -6,7 +6,8 @@ import Image from "next/image";
 
 const NewPortfolio = () => {
   const [activeTab, setActiveTab] = useState("Business");
-  const contentRef = useRef(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const portfolioRef = useRef<HTMLDivElement | null>(null); // Typed portfolioRef
 
   // Extract category names dynamically
   const categoryNames = portfolioContent.map((item) => Object.keys(item)[0]);
@@ -24,11 +25,20 @@ const NewPortfolio = () => {
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       );
     }
+
+    // Scroll to the portfolio section when the tab changes
+    if (portfolioRef.current) {
+      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   }, [activeTab]);
 
   return (
     <div className="bg-gray-100">
-      <div id="portfolio" className="templateContainer py-6 lg:py-12">
+      <div
+        id="portfolio"
+        ref={portfolioRef} // Assign the reference to the portfolio section
+        className="templateContainer py-6 lg:py-12"
+      >
         <h2
           data-aos="fade-up"
           className="text-3xl lg:text-5xl text-center text-primaryGreen font-medium"
