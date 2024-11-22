@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import service from "@/public/home-image/sevices.jpg";
+import ContactButton from "./ContactButton";
 
 const Ourservice = () => {
   const data = [
@@ -99,6 +100,7 @@ const Ourservice = () => {
               </div>
             ))}
           </div>
+          <ContactButton text="Get in touch" />
         </div>
       </div>
     </div>

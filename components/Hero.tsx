@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import ContactButton from "./ContactButton";
-import home from "@/public/home-image/home-1.jpg";
 
 const Hero = () => {
   return (
     <div
       id="home"
-      className="templateContainer flex flex-col lg:flex-row lg:h-[550px] gap-6 pb-6"
+      className="templateContainer flex flex-col items-center lg:flex-row lg:h-[550px] gap-6 pb-6"
     >
       <div
         data-aos="zoom-out"
@@ -31,17 +30,24 @@ const Hero = () => {
         <ContactButton text="Get in touch" />
       </div>
       {/* ----------------- */}
-      <div className="w-full lg:w-[40%] ">
-        <div data-aos="zoom-out" className="h-full overflow-hidden w-full">
+      <div className="w-full mt-5 lg:mt50 lg:w-[40%]">
+        <div className="">
           <Image
-            src={home.src}
-            alt=""
-            className="w-full px-5 h-full object-contain object-bottom"
-            height={1600}
-            // sizes="(min-width: 1540px) 484px, (min-width: 1280px) 389px, (min-width: 1040px) 294px, (min-width: 780px) 664px, (min-width: 680px) 568px, calc(94.44vw - 55px)"
-            width={1600}
+            src="/bulb.png"
+            alt="Hero Image"
+            className="lg:h-[450px] bouncing object-contain w-full"
+            height={800}
+            width={800}
           />
-          {/* <div className="h-[250px] -mt-[250px] lg:h-[330px] lg:-mt-[330px] rounded-3xl w-full bg-gray-100"></div> */}
+        </div>
+        <div className="flex -mt-5 ml-3 items-center justify-center ">
+          <Image
+            src="/shadow.png"
+            className=" h-10 w-48"
+            alt="Hero Image"
+            height={200}
+            width={1000}
+          />
         </div>
       </div>
     </div>

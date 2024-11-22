@@ -63,3 +63,18 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.bouncing {
+  animation: bounce 2s infinite; /* Duration: 2s, repeats infinitely */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Start and return to the original position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move upward */
+  }
+  100% {
+    transform: translateY(0px); /* A smaller bounce upward */
+  }
+}
