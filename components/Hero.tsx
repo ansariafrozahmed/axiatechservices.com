@@ -30,7 +30,7 @@ const Hero = () => {
         <ContactButton text="Get in touch" />
       </div>
       {/* ----------------- */}
-      <div className="w-full mt-5 lg:mt50 lg:w-[40%]">
+      <div data-aos="zoom-out" className="w-full mt-5 lg:mt50 lg:w-[40%]">
         <div className="">
           <Image
             src="/bulb.png"

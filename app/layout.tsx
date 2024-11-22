@@ -5,6 +5,7 @@ import Footer from "@/components/HeaderFooter/Footer";
 import AosComp from "@/components/Aos";
 import LenisWrapper from "@/components/LenisWrapper";
 
+// const FRONTEND = "http://localhost:3000";
 const FRONTEND = "https://axiatechservices.com";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${FRONTEND}/opengraph.webp`,
+        url: `${FRONTEND}/logo/opengraph.png`,
         width: 1200,
         height: 630,
         alt: "Axia Tech Services",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     title: "Axia Tech Services",
     description:
       "Web Development. Digital Marketing. SEO. All-in-One Solutions to Elevate Your Business.",
-    images: [`${FRONTEND}/opengraph.webp`],
+    images: [`${FRONTEND}/logo/opengraph.png`],
   },
   alternates: {
     canonical: `${FRONTEND}`,
